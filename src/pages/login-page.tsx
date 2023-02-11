@@ -4,7 +4,6 @@ import React from "react";
 import { useAppDispatch, useAppSelector } from "../redux-store/hook";
 import {
   authReducer,
-  loginAction,
   updateProfileAction,
 } from "../redux-store/slice/authSlice";
 import { authProfile } from "../app-type/Login.type";

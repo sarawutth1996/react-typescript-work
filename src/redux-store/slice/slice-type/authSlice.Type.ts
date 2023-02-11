@@ -1,10 +1,13 @@
+// ระบุ Type เพื่อนำมาใช้ในหน้า Slice 
 interface authProfile {
-  nickname: string;
-  role: string;
+  profile :{
+    nickname: string;
+    role: string;
+  }
 }
 
-export interface authLogin {
+// extends คุณสมบัติ ของ authProfile มาใช้
+export interface authLogin extends authProfile {
   username: string;
   password: string;
-  profile: authProfile;
-}
+};

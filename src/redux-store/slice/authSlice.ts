@@ -32,7 +32,7 @@ export const authSlice = createSlice({
 });
 
 // export function ที่ต้องการนำไปใช้
-export const { loginAction,updateProfileAction } = authSlice.actions;
+export const { loginAction, updateProfileAction} = authSlice.actions;
 
 // export เพื่อนำไประบุในหน้า store ใน fuunction reducers : { authState : authReducer}
 export const authReducer = (state: RootState) => state.authState
